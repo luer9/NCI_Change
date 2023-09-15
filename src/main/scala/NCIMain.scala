@@ -6,11 +6,11 @@ object NCIMain {
   val _sc: SparkContext = spark.sparkContext
   import spark.implicits._
   def main(args: Array[String]): Unit = {
-    val originDataFile = "/Users/luyang/Documents/project/db/AiswcJAR/uobm1.nt"
-    val inputSosFile = "/Users/luyang/Documents/project/db/NCI_INDEX/uobm1/uobm1/uobm1.so"
-    val inputPredFile = "/Users/luyang/Documents/project/db/NCI_INDEX/uobm1/uobm1/uobm1.p"
-    val NCIDIR = "/Users/luyang/Documents/project/db/NCI_INDEX/RESULT/UOBM1"
-    val outputDIR = "/Users/luyang/Documents/project/db/NCI_Change/RESULT"
+    val originDataFile = "F:\\data\\uobm100.nt"
+    val inputSosFile = "F:\\dbproject\\NCI_MAPPING\\data\\uobm100\\uobm100.so"
+    val inputPredFile = "F:\\dbproject\\NCI_MAPPING\\data\\uobm100\\uobm100.p"
+    val NCIDIR = "F:\\dbproject\\NCI_INDEX\\RESULT\\UOBM100"
+    val outputDIR = "F:\\dbproject\\NCI_Change\\RESULT"
     //     todo: read triple (get data)
 //    val triDF = DataProcess.DataReader.getTriples(args(0))
 //    val predsDF = DataProcess.DataReader.getPreds(args(1))

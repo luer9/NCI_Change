@@ -33,6 +33,10 @@ object Configuration {
     val conf = new SparkConf()
       .setAppName("NCI_INDEX_DataAnalysis")
       .setMaster("local[*]")
+      .set("spark.sql.shuffle.partitions", "8")
+      .set("spark.default.parallelism", "12")
+      .set("spark.driver.memory", "15G")
+      .set("spark.executor.memory", "20G")
 
     conf
   }
